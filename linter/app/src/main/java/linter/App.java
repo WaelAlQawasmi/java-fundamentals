@@ -16,7 +16,8 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        fileJsTester("resources/gates.js");
+        fileJsTester(args[0]);
+        System.out.println(args[0]);
     }
 
     public static int  fileJsTester(String phth) {
@@ -42,7 +43,7 @@ public class App {
 
 
         }
-        //        File file1 = new File("/home/jason/Desktop/class-names.txt"); // absolute paths
+      
         System.out.println("NUM "+errorCounter+": Missing semicolon");
         return errorCounter;
     }
