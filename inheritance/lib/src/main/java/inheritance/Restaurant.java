@@ -28,12 +28,12 @@ this.stars=5;
         this.price = price;
 
     }
-public  void addRevews(String ather,Integer review){
+public  void addRevews(String ather,Integer review,String body){
         if (review<0 || review>5){
             System.out.println(" enter error,plese enter the review betwwen 0and 5");
         }
         else{
-        Review newReviver=new Review(ather,review);
+        Review newReviver=new Review(ather,review,body);
     Reviews.add(newReviver);
 
        reReview();}
