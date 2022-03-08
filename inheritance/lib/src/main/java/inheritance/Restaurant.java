@@ -53,8 +53,20 @@ public void reReview(){
 public void  getReview(){
     System.out.println( "THE review of  "+this.name+" restorant is "+this.stars);
 }
+
+    public void  AllReviews(){
+        for (int i = 0; i < Reviews.size(); i++) {
+         System.out.println(Reviews.get(i).toString());
+
+        }
+
+    }
     @Override
     public String toString() {
+        System.out.println("---------------------reviews--------------------");
+    AllReviews();
+
+        System.out.println("---------------------Restaurant Summery--------------------");
         return "Restaurant{" +
                 "name='" + name + '\'' +
                 ", stars=" + stars +

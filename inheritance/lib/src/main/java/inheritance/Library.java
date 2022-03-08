@@ -11,7 +11,8 @@ Res1.addRevews("wael",2);
         Res1.addRevews("wael",3);
 
         Res1.addRevews("wael",3);
-Res1.getReview();
+
+System.out.println(Res1);
     }
 
 }
