@@ -3,16 +3,16 @@
  */
 package inheritance;
 
+import java.util.ArrayList;
+
 public class Library {
     public static void main(String[] args) {
-Restaurant Res1=new Restaurant("res1","$");
-Res1.addRevews("wael",2);
-        Res1.addRevews("wael",4);
-        Res1.addRevews("wael",3);
-
-        Res1.addRevews("wael",3);
-
-System.out.println(Res1);
+        Theater testShop= new Theater("Thater1");
+        testShop.addMovie("pat man");
+        testShop.addMovie("spider man");
+        testShop.addMovie("new man");
+        testShop.addRevews("wael",4,"good");
+       System.out.println(testShop.toString());
     }
 
 }
